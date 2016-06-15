@@ -14,17 +14,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let customView = RouteView(frame: CGRect(x: 20, y: 100, width: 350, height: 50))
-        customView.middleText.text = "8:01"
-        self.view.addSubview(customView)
+        let calc = DateCalculator()
         
         
-        let customView2 = RouteView(frame: CGRect(x: 20, y: 150, width: 350, height: 50))
-        customView2.middleText.text = "8:20"
-        customView2.leftIcon.text = String.fontAwesomeIconWithName(FontAwesome.Tint)
-        self.view.addSubview(customView2)
+        
+        addView(100, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(40)), icon: FontAwesome.Bed);
+        addView(150, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(30)), icon: FontAwesome.Tint);
+        addView(200, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(20)), icon: FontAwesome.Car);
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func addView(y: Int, timeText: String, icon: FontAwesome)->RouteView{
+        let viewRow = RouteView(frame: CGRect(x: 20, y: y, width: 350, height: 50))
+        viewRow.middleText.text = timeText
+        viewRow.leftIcon.text = String.fontAwesomeIconWithName(icon)
+        self.view.addSubview(viewRow)
+        return viewRow
     }
 
     override func didReceiveMemoryWarning() {

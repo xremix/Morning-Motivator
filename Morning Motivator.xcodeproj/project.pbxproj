@@ -11,6 +11,7 @@
 		6473FC881D1131C3007C2BCA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473FC871D1131C3007C2BCA /* TodayViewController.swift */; };
 		6473FC8B1D1131C3007C2BCA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6473FC891D1131C3007C2BCA /* MainInterface.storyboard */; };
 		6473FC8F1D1131C3007C2BCA /* Morning Motivator Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6473FC821D1131C3007C2BCA /* Morning Motivator Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6473FC951D11320C007C2BCA /* DateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473FC941D11320C007C2BCA /* DateCalculator.swift */; };
 		E2BB0D0F1D1082F5004D7FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D0E1D1082F5004D7FC1 /* AppDelegate.swift */; };
 		E2BB0D111D1082F5004D7FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D101D1082F5004D7FC1 /* ViewController.swift */; };
 		E2BB0D141D1082F5004D7FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BB0D121D1082F5004D7FC1 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		6473FC871D1131C3007C2BCA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		6473FC8A1D1131C3007C2BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		6473FC8C1D1131C3007C2BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6473FC941D11320C007C2BCA /* DateCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCalculator.swift; sourceTree = "<group>"; };
 		E2BB0D0B1D1082F5004D7FC1 /* Morning Motivator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morning Motivator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BB0D0E1D1082F5004D7FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BB0D101D1082F5004D7FC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				E2BB0D241D10833A004D7FC1 /* FontAwesome.otf */,
 				E2BB0D251D10833A004D7FC1 /* FontAwesome.swift */,
 				E2BB0D2B1D108422004D7FC1 /* RouteView.swift */,
+				6473FC941D11320C007C2BCA /* DateCalculator.swift */,
 			);
 			path = "Morning Motivator";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				E2BB0D261D10833A004D7FC1 /* Enum.swift in Sources */,
 				E2BB0D2C1D108422004D7FC1 /* RouteView.swift in Sources */,
 				E2BB0D171D1082F5004D7FC1 /* Morning_Motivator.xcdatamodeld in Sources */,
+				6473FC951D11320C007C2BCA /* DateCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

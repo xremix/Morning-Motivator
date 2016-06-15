@@ -31,6 +31,7 @@ class RouteView: UIView {
     }
     
     func addLeftIcon (){
+        leftIcon.textAlignment = NSTextAlignment.Center
         leftIcon.font = UIFont.fontAwesomeOfSize(24)
         leftIcon.text = String.fontAwesomeIconWithName(FontAwesome.Bed)
         leftIcon.textColor = UIColor.darkGrayColor()
