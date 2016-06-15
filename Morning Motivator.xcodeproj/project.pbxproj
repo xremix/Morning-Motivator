@@ -12,6 +12,11 @@
 		6473FC8B1D1131C3007C2BCA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6473FC891D1131C3007C2BCA /* MainInterface.storyboard */; };
 		6473FC8F1D1131C3007C2BCA /* Morning Motivator Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6473FC821D1131C3007C2BCA /* Morning Motivator Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6473FC951D11320C007C2BCA /* DateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473FC941D11320C007C2BCA /* DateCalculator.swift */; };
+		6473FC961D1133CA007C2BCA /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D2B1D108422004D7FC1 /* RouteView.swift */; };
+		6473FC971D1133E9007C2BCA /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D251D10833A004D7FC1 /* FontAwesome.swift */; };
+		6473FC981D1133F1007C2BCA /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2BB0D241D10833A004D7FC1 /* FontAwesome.otf */; };
+		6473FC991D1133F3007C2BCA /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D231D10833A004D7FC1 /* Enum.swift */; };
+		6473FC9A1D1133FE007C2BCA /* DateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473FC941D11320C007C2BCA /* DateCalculator.swift */; };
 		E2BB0D0F1D1082F5004D7FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D0E1D1082F5004D7FC1 /* AppDelegate.swift */; };
 		E2BB0D111D1082F5004D7FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D101D1082F5004D7FC1 /* ViewController.swift */; };
 		E2BB0D141D1082F5004D7FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BB0D121D1082F5004D7FC1 /* Main.storyboard */; };
@@ -227,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6473FC981D1133F1007C2BCA /* FontAwesome.otf in Resources */,
 				6473FC8B1D1131C3007C2BCA /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6473FC961D1133CA007C2BCA /* RouteView.swift in Sources */,
+				6473FC971D1133E9007C2BCA /* FontAwesome.swift in Sources */,
+				6473FC9A1D1133FE007C2BCA /* DateCalculator.swift in Sources */,
+				6473FC991D1133F3007C2BCA /* Enum.swift in Sources */,
 				6473FC881D1131C3007C2BCA /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

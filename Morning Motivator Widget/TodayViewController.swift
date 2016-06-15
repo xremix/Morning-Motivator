@@ -14,6 +14,21 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+        
+        let calc = DateCalculator()
+        
+        addView(0, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(45)), icon: FontAwesome.Bed);
+        addView(25, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(32)), icon: FontAwesome.Tint);
+        addView(50, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(25)), icon: FontAwesome.Car);
+    }
+    
+    func addView(y: Int, timeText: String, icon: FontAwesome)->RouteView{
+        let viewRow = RouteView(frame: CGRect(x: 20, y: y, width: 350, height: 50))
+        viewRow.setTextColor(UIColor.whiteColor())
+        viewRow.middleText.text = timeText
+        viewRow.leftIcon.text = String.fontAwesomeIconWithName(icon)
+        self.view.addSubview(viewRow)
+        return viewRow
     }
     
     override func didReceiveMemoryWarning() {

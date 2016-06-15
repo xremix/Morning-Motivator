@@ -49,5 +49,11 @@ class RouteView: UIView {
         rightIcon.textColor = UIColor.darkGrayColor()
         self.addSubview(rightIcon)
     }
+    
+    func setTextColor(color: UIColor){
+        leftIcon.textColor = color
+        middleText.textColor = color
+        rightIcon.textColor = color
+    }
 
 }

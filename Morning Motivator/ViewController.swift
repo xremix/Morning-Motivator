@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         
         
         
-        addView(100, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(40)), icon: FontAwesome.Bed);
-        addView(150, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(30)), icon: FontAwesome.Tint);
-        addView(200, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(20)), icon: FontAwesome.Car);
+        addView(100, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(45)), icon: FontAwesome.Bed);
+        addView(150, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(32)), icon: FontAwesome.Tint);
+        addView(200, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(25)), icon: FontAwesome.Car);
         
         // Do any additional setup after loading the view, typically from a nib.
     }
