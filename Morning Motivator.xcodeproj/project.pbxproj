@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6473FC851D1131C3007C2BCA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6473FC841D1131C3007C2BCA /* NotificationCenter.framework */; };
+		6473FC881D1131C3007C2BCA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473FC871D1131C3007C2BCA /* TodayViewController.swift */; };
+		6473FC8B1D1131C3007C2BCA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6473FC891D1131C3007C2BCA /* MainInterface.storyboard */; };
+		6473FC8F1D1131C3007C2BCA /* Morning Motivator Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6473FC821D1131C3007C2BCA /* Morning Motivator Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E2BB0D0F1D1082F5004D7FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D0E1D1082F5004D7FC1 /* AppDelegate.swift */; };
 		E2BB0D111D1082F5004D7FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D101D1082F5004D7FC1 /* ViewController.swift */; };
 		E2BB0D141D1082F5004D7FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BB0D121D1082F5004D7FC1 /* Main.storyboard */; };
@@ -19,7 +23,36 @@
 		E2BB0D2C1D108422004D7FC1 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D2B1D108422004D7FC1 /* RouteView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6473FC8D1D1131C3007C2BCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2BB0D031D1082F4004D7FC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6473FC811D1131C3007C2BCA;
+			remoteInfo = "Morning Motivator Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6473FC931D1131C3007C2BCA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6473FC8F1D1131C3007C2BCA /* Morning Motivator Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6473FC821D1131C3007C2BCA /* Morning Motivator Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Morning Motivator Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6473FC841D1131C3007C2BCA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6473FC871D1131C3007C2BCA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6473FC8A1D1131C3007C2BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6473FC8C1D1131C3007C2BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2BB0D0B1D1082F5004D7FC1 /* Morning Motivator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morning Motivator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BB0D0E1D1082F5004D7FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BB0D101D1082F5004D7FC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +68,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6473FC7F1D1131C3007C2BCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6473FC851D1131C3007C2BCA /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2BB0D081D1082F5004D7FC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +86,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6473FC831D1131C3007C2BCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6473FC841D1131C3007C2BCA /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6473FC861D1131C3007C2BCA /* Morning Motivator Widget */ = {
+			isa = PBXGroup;
+			children = (
+				6473FC871D1131C3007C2BCA /* TodayViewController.swift */,
+				6473FC891D1131C3007C2BCA /* MainInterface.storyboard */,
+				6473FC8C1D1131C3007C2BCA /* Info.plist */,
+			);
+			path = "Morning Motivator Widget";
+			sourceTree = "<group>";
+		};
 		E2BB0D021D1082F4004D7FC1 = {
 			isa = PBXGroup;
 			children = (
 				E2BB0D0D1D1082F5004D7FC1 /* Morning Motivator */,
+				6473FC861D1131C3007C2BCA /* Morning Motivator Widget */,
+				6473FC831D1131C3007C2BCA /* Frameworks */,
 				E2BB0D0C1D1082F5004D7FC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E2BB0D0B1D1082F5004D7FC1 /* Morning Motivator.app */,
+				6473FC821D1131C3007C2BCA /* Morning Motivator Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +144,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6473FC811D1131C3007C2BCA /* Morning Motivator Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6473FC921D1131C3007C2BCA /* Build configuration list for PBXNativeTarget "Morning Motivator Widget" */;
+			buildPhases = (
+				6473FC7E1D1131C3007C2BCA /* Sources */,
+				6473FC7F1D1131C3007C2BCA /* Frameworks */,
+				6473FC801D1131C3007C2BCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Morning Motivator Widget";
+			productName = "Morning Motivator Widget";
+			productReference = 6473FC821D1131C3007C2BCA /* Morning Motivator Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E2BB0D0A1D1082F5004D7FC1 /* Morning Motivator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2BB0D201D1082F5004D7FC1 /* Build configuration list for PBXNativeTarget "Morning Motivator" */;
@@ -89,10 +168,12 @@
 				E2BB0D071D1082F5004D7FC1 /* Sources */,
 				E2BB0D081D1082F5004D7FC1 /* Frameworks */,
 				E2BB0D091D1082F5004D7FC1 /* Resources */,
+				6473FC931D1131C3007C2BCA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6473FC8E1D1131C3007C2BCA /* PBXTargetDependency */,
 			);
 			name = "Morning Motivator";
 			productName = "Morning Motivator";
@@ -109,6 +190,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Toni Hoffmann";
 				TargetAttributes = {
+					6473FC811D1131C3007C2BCA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = T564M5W3X3;
+					};
 					E2BB0D0A1D1082F5004D7FC1 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = T564M5W3X3;
@@ -129,11 +214,20 @@
 			projectRoot = "";
 			targets = (
 				E2BB0D0A1D1082F5004D7FC1 /* Morning Motivator */,
+				6473FC811D1131C3007C2BCA /* Morning Motivator Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6473FC801D1131C3007C2BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6473FC8B1D1131C3007C2BCA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2BB0D091D1082F5004D7FC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +242,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6473FC7E1D1131C3007C2BCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6473FC881D1131C3007C2BCA /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2BB0D071D1082F5004D7FC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,7 +265,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6473FC8E1D1131C3007C2BCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6473FC811D1131C3007C2BCA /* Morning Motivator Widget */;
+			targetProxy = 6473FC8D1D1131C3007C2BCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		6473FC891D1131C3007C2BCA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6473FC8A1D1131C3007C2BCA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		E2BB0D121D1082F5004D7FC1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -183,6 +301,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6473FC901D1131C3007C2BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Morning Motivator Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.xremix.Morning-Motivator.Morning-Motivator-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6473FC911D1131C3007C2BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Morning Motivator Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.xremix.Morning-Motivator.Morning-Motivator-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		E2BB0D1E1D1082F5004D7FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -272,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Morning Motivator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.xremix.Morning-Motivator";
@@ -283,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Morning Motivator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.xremix.Morning-Motivator";
@@ -293,6 +435,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6473FC921D1131C3007C2BCA /* Build configuration list for PBXNativeTarget "Morning Motivator Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6473FC901D1131C3007C2BCA /* Debug */,
+				6473FC911D1131C3007C2BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E2BB0D061D1082F4004D7FC1 /* Build configuration list for PBXProject "Morning Motivator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -309,6 +459,7 @@
 				E2BB0D221D1082F5004D7FC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
