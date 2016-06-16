@@ -19,11 +19,50 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.6481665416211746" green="0.27507415315677675" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Morning Motivator" id="7oM-Xs-Ymr"/>
+                    <tabBarItem key="tabBarItem" title="Motivator" id="lXb-fW-GDl"/>
+                    <navigationItem key="navigationItem" id="7oM-Xs-Ymr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="347"/>
+            <point key="canvasLocation" x="1028" y="404"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="GmJ-FY-Opl">
+            <objects>
+                <viewController id="37V-pT-dob" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LDZ-Tt-2Uu"/>
+                        <viewControllerLayoutGuide type="bottom" id="HM4-lV-nOW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pXE-x9-Wql">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="jGl-Ta-dTs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PqV-45-gZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-284"/>
+        </scene>
+        <!--Morning Motivator-->
+        <scene sceneID="WW1-ku-LVy">
+            <objects>
+                <tabBarController id="PAQ-R8-scH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Morning Motivator" id="PX3-WE-Bkl"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Stn-I4-wxc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9RR-1X-qgz"/>
+                        <segue destination="37V-pT-dob" kind="relationship" relationship="viewControllers" id="Fj3-ma-mCO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsb-gX-1O3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="-85"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4ZE-MS-MZL">
@@ -39,12 +78,12 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fux-L5-y4Q"/>
+                        <segue destination="PAQ-R8-scH" kind="relationship" relationship="rootViewController" id="fzh-BH-zq4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnr-Tn-DRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-308" y="347"/>
+            <point key="canvasLocation" x="-675" y="24"/>
         </scene>
     </scenes>
 </document>
