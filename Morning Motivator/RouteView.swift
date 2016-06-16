@@ -17,9 +17,7 @@ class RouteView: UIView {
         super.init(frame : frame)
         addLeftIcon()
         addTime()
-        addRightIcon()
-//        self.backgroundColor = UIColor.grayColor()
-        
+        addRightIcon()        
     }
     
     convenience init () {

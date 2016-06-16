@@ -10,7 +10,11 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    var bedLabel: RouteView? = nil
+    var showerLabel: RouteView? = nil
+    var drivingLabel: RouteView? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
@@ -18,9 +22,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         let calc = DateCalculator()
         
-        addView(0, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getBedTime())), icon: FontAwesome.Bed);
-        addView(40, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getShowerTime())), icon: FontAwesome.Tint);
-        addView(80, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getDrivingTime())), icon: FontAwesome.Car);
+        bedLabel = addView(0, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getBedTime())), icon: FontAwesome.Bed);
+        showerLabel = addView(40, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getShowerTime())), icon: FontAwesome.Tint);
+        drivingLabel = addView(80, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getDrivingTime())), icon: FontAwesome.Car);
     }
     
     func addView(y: Int, timeText: String, icon: FontAwesome)->RouteView{

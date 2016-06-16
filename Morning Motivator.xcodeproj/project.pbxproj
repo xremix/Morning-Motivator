@@ -19,6 +19,7 @@
 		6473FC9A1D1133FE007C2BCA /* DateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473FC941D11320C007C2BCA /* DateCalculator.swift */; };
 		64D071C91D127E6800A20E19 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D071C81D127E6800A20E19 /* Settings.swift */; };
 		64D071CA1D127E6800A20E19 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D071C81D127E6800A20E19 /* Settings.swift */; };
+		E27BBE5A1D132B690042F058 /* settingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BBE591D132B690042F058 /* settingsVC.swift */; };
 		E2BB0D0F1D1082F5004D7FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D0E1D1082F5004D7FC1 /* AppDelegate.swift */; };
 		E2BB0D111D1082F5004D7FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB0D101D1082F5004D7FC1 /* ViewController.swift */; };
 		E2BB0D141D1082F5004D7FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BB0D121D1082F5004D7FC1 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		6473FC8C1D1131C3007C2BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6473FC941D11320C007C2BCA /* DateCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCalculator.swift; sourceTree = "<group>"; };
 		64D071C81D127E6800A20E19 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E27BBE591D132B690042F058 /* settingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsVC.swift; sourceTree = "<group>"; };
 		E2BB0D0B1D1082F5004D7FC1 /* Morning Motivator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morning Motivator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BB0D0E1D1082F5004D7FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BB0D101D1082F5004D7FC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				E2BB0D2B1D108422004D7FC1 /* RouteView.swift */,
 				6473FC941D11320C007C2BCA /* DateCalculator.swift */,
 				64D071C81D127E6800A20E19 /* Settings.swift */,
+				E27BBE591D132B690042F058 /* settingsVC.swift */,
 			);
 			path = "Morning Motivator";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				E2BB0D281D10833A004D7FC1 /* FontAwesome.swift in Sources */,
 				E2BB0D111D1082F5004D7FC1 /* ViewController.swift in Sources */,
 				64D071C91D127E6800A20E19 /* Settings.swift in Sources */,
+				E27BBE5A1D132B690042F058 /* settingsVC.swift in Sources */,
 				E2BB0D0F1D1082F5004D7FC1 /* AppDelegate.swift in Sources */,
 				E2BB0D261D10833A004D7FC1 /* Enum.swift in Sources */,
 				E2BB0D2C1D108422004D7FC1 /* RouteView.swift in Sources */,

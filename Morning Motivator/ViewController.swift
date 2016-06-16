@@ -11,18 +11,25 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
+    var bedLabel: RouteView? = nil
+    var showerLabel: RouteView? = nil
+    var drivingLabel: RouteView? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let calc = DateCalculator()
-        
-        
-        
-        addView(100, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getBedTime())), icon: FontAwesome.Bed);
-        addView(150, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getShowerTime())), icon: FontAwesome.Tint);
-        addView(200, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getDrivingTime())), icon: FontAwesome.Car);
+        bedLabel = addView(100, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getBedTime())), icon: FontAwesome.Bed);
+        showerLabel = addView(150, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getShowerTime())), icon: FontAwesome.Tint);
+        drivingLabel = addView(200, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getDrivingTime())), icon: FontAwesome.Car);
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let calc = DateCalculator()
+        bedLabel!.middleText.text = calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getBedTime()))
+        showerLabel!.middleText.text = calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getShowerTime()))
+        drivingLabel!.middleText.text = calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getDrivingTime()))
     }
     
     func addView(y: Int, timeText: String, icon: FontAwesome)->RouteView{
