@@ -17,9 +17,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         let calc = DateCalculator()
         
-        addView(0, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(45)), icon: FontAwesome.Bed);
-        addView(25, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(32)), icon: FontAwesome.Tint);
-        addView(50, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(25)), icon: FontAwesome.Car);
+        addView(0, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getBedTime())), icon: FontAwesome.Bed);
+        addView(25, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getShowerTime())), icon: FontAwesome.Tint);
+        addView(50, timeText: calc.dateTimeText(calc.getDateFromNowWithMinutes(Settings.getDrivingTime())), icon: FontAwesome.Car);
     }
     
     func addView(y: Int, timeText: String, icon: FontAwesome)->RouteView{
